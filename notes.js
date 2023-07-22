@@ -77,3 +77,34 @@ console.log(typeof numerals + typeof numeralNum); //Checking//
 const numerals2 = 223; 
 const numeralNum2 = numerals2.toString(); //Changing number to string//
 console.log(typeof numerals2 + typeof numeralNum2); //Checking//
+const expressionOutput = `Using backticks 
+for expressions: ${numerals2 - 23},\nand for line breaks`;
+/*List of String methods: length, slice, substring, substr, replace,
+replaceAll, toUpperCase, toLowerCase, concat, trim, trimStart,
+trimEnd, padStart, padEnd, charAt, charCodeAt, split (split makes arrays)*/
+//Conditionals//
+if (x = 0) {
+    //code to run//
+}
+else if (x != 0) {
+    //code to run//
+}
+else {
+    //code to run//
+}
+//Same as usual, > < = != == || &&//
+let userAge = 19;
+let accessAllowed = (userAge > 17) ? true : false; //if (condition=true) then true, else false//
+let a = +prompt('a?', '');
+switch (a) {
+    case 0:
+        alert( 0 );
+        break;
+    case 1:
+        alert( 1 );
+        break;
+    case 2:
+    case 3:
+        alert( '2,3' );
+        break;
+}
