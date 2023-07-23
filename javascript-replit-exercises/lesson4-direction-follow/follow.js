@@ -11,17 +11,6 @@
   After making your prediction, press 'Run' at the top and look at the output in the console. If you were surprised by anything, go back and look at the code to see what's going on.
 
 */
-
-// code to be deleted
-const birthYear = 1948;
-const thisYear = 1965;
-const firstName = "Carlos";
-const lastName = "Stevenson";
-
-const greeting = "Hello! My name is " + firstName + " " + lastName + " and I am " + (thisYear - birthYear) + " years old.";
-
-console.log(greeting);
-
 /*
 
   ===== Step 2: =====
@@ -53,7 +42,14 @@ console.log(greeting);
 */
 
 //===== Your code goes here =================
-
+let firstName = "Carlos",
+    lastName = "Stevenson",
+    birthYear = 1948,
+    thisYear = 1965,
+    fullName = firstName + " " + lastName,
+    age = thisYear - birthYear;
+let greeting = `Hello! My name is ${fullName} and I am ${age} years old.`;
+console.log(greeting);
 
 /*
 
@@ -87,25 +83,25 @@ console.log(greeting);
 
 // Test Step 2: 
 
-module.exports = {
+/* module.exports = {
   testGroup: "a",
   greeting,
   birthYear,
   thisYear,
   firstName,
   lastName
-}
+} */
 
 
 // Test Step 3: (Don't forget to comment out lines under Test Step 2)
 
-// module.exports = {
-// 	testGroup: "b",
-// 	greeting,
-// 	birthYear,
-// 	thisYear,
-// 	firstName,
-// 	lastName,
-// 	fullName,
-// 	age
-// }
+module.exports = {
+	testGroup: "b",
+ 	greeting,
+ 	birthYear,
+ 	thisYear,
+ 	firstName,
+ 	lastName,
+ 	fullName,
+ 	age
+}
