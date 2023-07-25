@@ -108,3 +108,33 @@ switch (a) {
         alert( '2,3' );
         break;
 }
+//Functions//
+function myFunction() { //Declaration using "function" keyword and naming it "myFunction"//
+    alert("hello"); //What the function will do when called upon aka invoked//
+}
+myFunction(); //Invoking the function//
+function helloName(name = "Tyler") { //Giving the function a default value for the paramater "name" to use if an arugment is not provided//
+    console.log(`Hello ${name}`);
+}
+helloName(); //Function will use the default value//
+helloName("Jasmine"); //Function will use the argument//
+function logKey(event) { //Creates a function that tells the user what key they pressed//
+    console.log(`You pressed "${event.key}"`);
+}
+textBox.addEventListener("keydown", logKey); //Listens to when a key is pressed and then uses the previous function//
+textBox.addEventListener("keydown", function (event) {
+    console.log(`You pressed "${event.key}"`); //A compact version of the previous 2 things//
+});
+textBox.addEventListener("keydown", (event) => {
+    console.log(`You pressed "${event.key}"`); //The same function as before but omitting the word "function"//
+});
+const originals = [1, 2, 3]; //Array, using []//
+const doubled = originals.map(item => item * 2); //Using an arrow function and also omitting "return" since it would only be 1 line//
+console.log(doubled); //Checking//
+function doubleOriginal(item) { //The above function, longhand//
+    return item * 2;
+}
+/*Variables outside of functions are "global" while variables defined inside
+of a function are limited to the scope of that function only. This means that 
+functions can use, edit, or remove variables outside of their "function {...}"
+but outside code and other functions cannot use each other's variables*/

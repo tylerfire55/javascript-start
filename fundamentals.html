@@ -21,6 +21,24 @@
     const max = 57;
     let actual = max - 13;
     let percentage = actual / max;
+    function add7(a) {
+      return number + 7;
+    };
+    let add8 = (a) => a+8;
+    function multiply(a, b) {
+      return a * b;
+    }
+    function capitalize(string = "default") {
+      string = string.charAt(0);
+      string = string.toUpperCase();
+      return string;
+    }
+    console.log(capitalize("sWEaty"));
+    function lastLetter(string = "default") {
+      return string.slice(string.length -1, string.length);
+    }
+    let endLetter = (string)  => string.slice(string.length -1, string.length);
+    console.log(lastLetter("stevenson"))
   </script>
 </body>
 </html>
